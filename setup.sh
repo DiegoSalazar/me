@@ -12,8 +12,10 @@ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile 
 source ~/.bash_profile
 
+# Setup Ruby
 rbenv install 2.5.5
 rbenv global 2.5.5
+gem install bundler
 
 # Setup git
 git config --global user.email 'me@diegosalazar,co'
